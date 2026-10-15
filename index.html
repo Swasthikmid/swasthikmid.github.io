@@ -5,32 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swasthikmid's Home</title>
     <style>
-  body {
-    background: #240040;
-    font-family: "Open Sans", "Segoe UI", sans-serif;
-  }
+      :root {
+        --bg: #1a0d2b;
+        --panel: rgba(255, 255, 255, 0.04);
+        --text: #f5f5f7;
+        --muted: #dfe6ff;
+        --accent: #dfe7ff;
+      }
 
-  h1 {
-    color: white;
-  }
+      * {
+        box-sizing: border-box;
+      }
 
-  p {
-    color: white;
-  }
-</style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      html, body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: "Open Sans", sans-serif;
+        font-weight: 600;
+        letter-spacing: -0.04em;
+        line-height: 1.35;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 32px 18px;
+      }
+
+      .container {
+        width: min(760px, 100%);
+        background: var(--panel);
+        border: 2px solid rgba(255, 255, 255, 0.12);
+        padding: 26px 30px;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      }
+
+      h1 {
+        margin: 0 0 10px;
+        color: white;
+        font-size: clamp(2.2rem, 5vw, 4rem);
+        font-weight: 700;
+        letter-spacing: -0.06em;
+      }
+
+      p {
+        margin: 0 0 14px;
+        color: var(--text);
+        font-size: clamp(1rem, 2.2vw, 1.5rem);
+        font-weight: 600;
+        letter-spacing: -0.04em;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 14px 0 18px;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Swasthikmid's home</h1>
-    <p>--------UNDER CONSTRUCTION.---------</p>
-     <p>Check out my maple syrup game!!</p> 
-     <a href="CanadaProjDPS26O">Play Now!!</a>
-    <p>---------</p>
-     <img src="WIP.png" alt="Work in progress for github pages made like ms paint.">
-    <p>_______________________</p>
-    <a href="geoapp/GeoAppV2.html">GeoApp</a>
-    <p>A geolocation app that tells you where you are with UTM coordinates.</p>
+    <div class="container">
+        <h1>Swasthikmid's home</h1>
+        <p>--------UNDER CONSTRUCTION.---------</p>
+        <p>Check out my maple syrup game!!</p>
+        <a href="CanadaProjDPS26O">Play Now!!</a>
+        <p>---------</p>
+        <img src="WIP.png" alt="Work in progress for github pages made like ms paint.">
+        <p>_______________________</p>
+        <a href="geoapp/GeoAppV2.html">GeoApp</a>
+        <p>A geolocation app that tells you where you are with UTM coordinates.</p>
+    </div>
 </body>
 </html>
