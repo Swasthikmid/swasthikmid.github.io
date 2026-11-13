@@ -3,10 +3,7 @@
 
 # homepage of swasthikmid.github.io
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/
-Swasthikmid/swasthikmid.github.io)
-
-
+View <a href="https://www.swasthikmid.github.io/">Here</a>
 
 
 
